@@ -5,3 +5,10 @@ D:\VisualStudio\ConsoleApp1\ConsoleApp6\obj\Debug\ConsoleApp6.csprojAssemblyRefe
 D:\VisualStudio\ConsoleApp1\ConsoleApp6\obj\Debug\ConsoleApp6.csproj.CoreCompileInputs.cache
 D:\VisualStudio\ConsoleApp1\ConsoleApp6\obj\Debug\ConsoleApp6.exe
 D:\VisualStudio\ConsoleApp1\ConsoleApp6\obj\Debug\ConsoleApp6.pdb
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp6\bin\Debug\ConsoleApp6.exe.config
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp6\bin\Debug\ConsoleApp6.exe
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp6\bin\Debug\ConsoleApp6.pdb
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp6\obj\Debug\ConsoleApp6.csprojAssemblyReference.cache
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp6\obj\Debug\ConsoleApp6.csproj.CoreCompileInputs.cache
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp6\obj\Debug\ConsoleApp6.exe
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp6\obj\Debug\ConsoleApp6.pdb

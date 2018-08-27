@@ -4,3 +4,10 @@ D:\VisualStudio\ConsoleApp1\ConsoleApp4\bin\Debug\ConsoleApp4.pdb
 D:\VisualStudio\ConsoleApp1\ConsoleApp4\obj\Debug\ConsoleApp4.csproj.CoreCompileInputs.cache
 D:\VisualStudio\ConsoleApp1\ConsoleApp4\obj\Debug\ConsoleApp4.exe
 D:\VisualStudio\ConsoleApp1\ConsoleApp4\obj\Debug\ConsoleApp4.pdb
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp4\bin\Debug\ConsoleApp4.exe.config
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp4\bin\Debug\ConsoleApp4.exe
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp4\bin\Debug\ConsoleApp4.pdb
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp4\obj\Debug\ConsoleApp4.csprojAssemblyReference.cache
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp4\obj\Debug\ConsoleApp4.csproj.CoreCompileInputs.cache
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp4\obj\Debug\ConsoleApp4.exe
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp4\obj\Debug\ConsoleApp4.pdb
