@@ -1,0 +1,7 @@
+D:\fferniot\ProgYLab2\ConsoleApp1\ConsoleApp15\bin\Debug\ConsoleApp15.exe.config
+D:\fferniot\ProgYLab2\ConsoleApp1\ConsoleApp15\bin\Debug\ConsoleApp15.exe
+D:\fferniot\ProgYLab2\ConsoleApp1\ConsoleApp15\bin\Debug\ConsoleApp15.pdb
+D:\fferniot\ProgYLab2\ConsoleApp1\ConsoleApp15\obj\Debug\ConsoleApp15.csprojAssemblyReference.cache
+D:\fferniot\ProgYLab2\ConsoleApp1\ConsoleApp15\obj\Debug\ConsoleApp15.csproj.CoreCompileInputs.cache
+D:\fferniot\ProgYLab2\ConsoleApp1\ConsoleApp15\obj\Debug\ConsoleApp15.exe
+D:\fferniot\ProgYLab2\ConsoleApp1\ConsoleApp15\obj\Debug\ConsoleApp15.pdb

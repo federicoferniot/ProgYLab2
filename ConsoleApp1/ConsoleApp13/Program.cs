@@ -11,7 +11,7 @@ namespace ConsoleApp13
         static void Main(string[] args)
         {
 
-            Console.WriteLine(Conversor.DecimalBinario(10));
+            Console.WriteLine(Conversor.DecimalBinario(0));
             Console.WriteLine(Conversor.BinarioDecimal("10"));
             Console.ReadKey();
         }
