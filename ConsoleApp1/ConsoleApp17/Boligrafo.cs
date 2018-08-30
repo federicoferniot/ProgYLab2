@@ -14,7 +14,7 @@ namespace ConsoleApp17
 
         public Boligrafo(short tinta, ConsoleColor color)
         {
-            this.tinta = tinta;
+            SetTinta(tinta);
             this.color = color;
         }
 
@@ -27,23 +27,58 @@ namespace ConsoleApp17
         {
             return tinta;
         }
-
+        /// <summary>
+        /// Gasta tanta tinta como pueda, devolviendo si pudo o no dibujar.
+        /// </summary>
+        /// <param name="gasto">Cantidad de tinta a gastar</param>
+        /// <param name="dibujo">Si pudo dibujar, devuelve tantos '*' como lo que pudo gastar de tinta</param>
+        /// <returns></returns>
         public bool Pintar(int gasto, out string dibujo)
         {
-            dibujo = "";
-            return true;
+            StringBuilder sb = new StringBuilder();
+            short tintaAGastar;
+            if(GetTinta()!=0)
+            {
+                if(GetTinta()<gasto)
+                {
+                    tintaAGastar = GetTinta();
+                }
+                else
+                {
+                    tintaAGastar = (short)gasto;
+                }
+                SetTinta((short)-gasto);
+                sb.Append('*', tintaAGastar);
+                dibujo = sb.ToString();
+                return true;
+            }
+            else
+            {
+                dibujo = "";
+                return false;
+            }
         }
-
+        /// <summary>
+        /// Recarga la tinta a su capacidad maxima
+        /// </summary>
         public void Recargar()
         {
-            this.SetTinta((short)(cantidadTintaMaxima - tinta));
+            SetTinta((short)(cantidadTintaMaxima - tinta));
         }
 
         private void SetTinta(short tinta)
         {
             short tintaAux;
             tintaAux = (short)(this.tinta + tinta);
-            if(tintaAux>=0 && tintaAux<=cantidadTintaMaxima)
+            if(tintaAux<=0)
+            {
+                this.tinta = 0;
+            }
+            else if(tintaAux>=cantidadTintaMaxima)
+            {
+                this.tinta = cantidadTintaMaxima;
+            }
+            else
             {
                 this.tinta = tintaAux;
             }

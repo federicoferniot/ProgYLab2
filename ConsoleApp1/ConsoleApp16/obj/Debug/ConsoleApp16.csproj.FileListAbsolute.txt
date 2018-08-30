@@ -5,3 +5,10 @@ D:\fferniot\ProgYLab2\ConsoleApp1\ConsoleApp16\obj\Debug\ConsoleApp16.csprojAsse
 D:\fferniot\ProgYLab2\ConsoleApp1\ConsoleApp16\obj\Debug\ConsoleApp16.csproj.CoreCompileInputs.cache
 D:\fferniot\ProgYLab2\ConsoleApp1\ConsoleApp16\obj\Debug\ConsoleApp16.exe
 D:\fferniot\ProgYLab2\ConsoleApp1\ConsoleApp16\obj\Debug\ConsoleApp16.pdb
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp16\bin\Debug\ConsoleApp16.exe.config
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp16\bin\Debug\ConsoleApp16.exe
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp16\bin\Debug\ConsoleApp16.pdb
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp16\obj\Debug\ConsoleApp16.csprojAssemblyReference.cache
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp16\obj\Debug\ConsoleApp16.csproj.CoreCompileInputs.cache
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp16\obj\Debug\ConsoleApp16.exe
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp16\obj\Debug\ConsoleApp16.pdb

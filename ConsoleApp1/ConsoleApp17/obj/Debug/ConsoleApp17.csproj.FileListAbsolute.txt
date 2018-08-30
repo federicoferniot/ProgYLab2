@@ -1,0 +1,7 @@
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp17\bin\Debug\ConsoleApp17.exe.config
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp17\bin\Debug\ConsoleApp17.exe
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp17\bin\Debug\ConsoleApp17.pdb
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp17\obj\Debug\ConsoleApp17.csprojAssemblyReference.cache
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp17\obj\Debug\ConsoleApp17.csproj.CoreCompileInputs.cache
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp17\obj\Debug\ConsoleApp17.exe
+D:\Proyectos\ProgYLab2\ConsoleApp1\ConsoleApp17\obj\Debug\ConsoleApp17.pdb
