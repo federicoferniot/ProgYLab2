@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp17
 {
-    class Program
+    class Ejercicio_17
     {
         static void Main(string[] args)
         {
