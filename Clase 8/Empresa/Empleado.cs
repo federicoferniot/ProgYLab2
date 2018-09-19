@@ -43,7 +43,12 @@ namespace Empresa
 
         public string Mostrar()
         {
-            return "";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(String.Format("NOMBRE: {0}", this.nombre));
+            sb.AppendLine(String.Format("APELLIDO: {0}", this.apellido));
+            sb.AppendLine(String.Format("LEGAJO: {0}", this.legajo));
+            sb.AppendLine(String.Format("SALARIO: {0}", this.salario));
+            return sb.ToString();
         }
 
     }

@@ -16,5 +16,12 @@ namespace Clase_8
         {
             InitializeComponent();
         }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            if(this.txtRazonSocial.Text != "" && this.txtDireccion.Text != "" && mtxtGanancias.Text != "")
+            {
+            }
+        }
     }
 }

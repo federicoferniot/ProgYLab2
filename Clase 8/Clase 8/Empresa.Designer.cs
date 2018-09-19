@@ -93,6 +93,7 @@
             this.btnAceptar.TabIndex = 6;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // frmEmpresa
             // 
@@ -106,6 +107,7 @@
             this.Controls.Add(this.lblGanancias);
             this.Controls.Add(this.lblDireccion);
             this.Controls.Add(this.lblRazonSocial);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "frmEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -179,11 +179,13 @@
             this.Controls.Add(this.lblLegajo);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmEmpleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clase 8";
+            this.Load += new System.EventHandler(this.frmEmpleado_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
