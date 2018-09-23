@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Express 15 for Windows Desktop
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehiculos", "Vehiculos\Vehiculos.csproj", "{A57B9956-DE18-4BC6-95B4-FF42EDA235CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio35", "Ejercicio35\Ejercicio35.csproj", "{589F8E8F-D2C1-41EE-B026-FC3E4FE92984}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio36", "Ejercicio36\Ejercicio36.csproj", "{72C581B1-F21E-45E9-8B82-28D671353C59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{A57B9956-DE18-4BC6-95B4-FF42EDA235CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A57B9956-DE18-4BC6-95B4-FF42EDA235CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A57B9956-DE18-4BC6-95B4-FF42EDA235CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{589F8E8F-D2C1-41EE-B026-FC3E4FE92984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{589F8E8F-D2C1-41EE-B026-FC3E4FE92984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{589F8E8F-D2C1-41EE-B026-FC3E4FE92984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{589F8E8F-D2C1-41EE-B026-FC3E4FE92984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72C581B1-F21E-45E9-8B82-28D671353C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C581B1-F21E-45E9-8B82-28D671353C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72C581B1-F21E-45E9-8B82-28D671353C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72C581B1-F21E-45E9-8B82-28D671353C59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
