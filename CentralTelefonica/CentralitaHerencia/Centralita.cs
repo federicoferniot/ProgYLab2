@@ -73,7 +73,7 @@ namespace CentralitaHerencia
 			return total;
 		}
 
-		public string Mostrar()
+		public override string ToString()
 		{
 			StringBuilder sb = new StringBuilder();
 			sb.AppendFormat("Razón Social: {0}\nGanancia Total: {1}\nGanancia por Locales: {2}\nGanancia por Provinciales: {3}\n",
@@ -83,19 +83,46 @@ namespace CentralitaHerencia
 				switch (llamada.GetType().ToString())
 				{
 					case ("CentralitaHerencia.Local"):
-						sb.AppendLine(((Local)llamada).Mostrar());
+						sb.AppendLine(((Local)llamada).ToString());
 						break;
 					case ("CentralitaHerencia.Provincial"):
-						sb.AppendLine(((Provincial)llamada).Mostrar());
+						sb.AppendLine(((Provincial)llamada).ToString());
 						break;
 				}
 			}
 			return sb.ToString();
 		}
 
+        private void AgregarLlamada(Llamada nuevaLlamada)
+        {
+            this.listaDeLlamadas.Add(nuevaLlamada);
+        }
+
 		public void OrdenarLlamadas()
 		{
 			this.listaDeLlamadas.Sort(Llamada.OrdenarPorDuracion);
 		}
+
+        public static bool operator ==(Centralita centralita, Llamada llamada)
+        {
+            foreach(Llamada llamadaEnCentralita in centralita.listaDeLlamadas)
+            {
+                if (llamadaEnCentralita == llamada)
+                    return true;
+            }
+            return false;
+        }
+
+        public static bool operator !=(Centralita centralita, Llamada llamada)
+        {
+            return !(centralita == llamada);
+        }
+
+        public static Centralita operator +(Centralita centralita, Llamada nuevaLlamada)
+        {
+            if (centralita != nuevaLlamada)
+                centralita.AgregarLlamada(nuevaLlamada);
+            return centralita;
+        }
 	}
 }

@@ -13,11 +13,13 @@ namespace CentralitaHerencia
 		Todas
 	}
 
-	public class Llamada
+	public abstract class Llamada
 	{
 		protected float duracion;
 		protected string nroDestino;
 		protected string nroOrigen;
+
+        public abstract float CostoLlamada { get; }
 
 		public float Duracion
 		{
@@ -41,7 +43,7 @@ namespace CentralitaHerencia
 			this.nroOrigen = nroOrigen;
 		}
 
-		public string Mostrar()
+		protected virtual string Mostrar()
 		{
 			StringBuilder sb = new StringBuilder();
 			sb.AppendFormat("Duracion: {0}\nNumero Destino: {1}\nNumero Origen: {2}", this.duracion, this.nroDestino, this.nroOrigen);
@@ -56,6 +58,18 @@ namespace CentralitaHerencia
 				return 1;
 			return 0;
 		}
+
+        public static bool operator ==(Llamada llamadaUno, Llamada llamadaDos)
+        {
+            return (llamadaUno.Equals(llamadaDos)
+                && llamadaUno.nroOrigen == llamadaDos.nroOrigen
+                && llamadaUno.nroDestino == llamadaDos.nroDestino);
+        }
+
+        public static bool operator !=(Llamada llamadaUno, Llamada llamadaDos)
+        {
+            return !(llamadaUno == llamadaDos);
+        }
 
 	}
 }

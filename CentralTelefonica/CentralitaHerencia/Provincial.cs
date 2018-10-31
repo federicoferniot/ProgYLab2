@@ -17,7 +17,7 @@ namespace CentralitaHerencia
 
 		protected Franja franjaHoraria;
 
-		public float CostoLlamada
+		public override float CostoLlamada
 		{
 			get { return this.CalcularCosto(); }
 		}
@@ -32,7 +32,7 @@ namespace CentralitaHerencia
 			this.franjaHoraria = miFranja;
 		}
 
-		public string Mostrar()
+		protected override string Mostrar()
 		{
 			StringBuilder sb = new StringBuilder();
 			sb.AppendLine(base.Mostrar());
@@ -57,5 +57,15 @@ namespace CentralitaHerencia
 			}
 			return resultado;
 		}
-	}
+
+        public override string ToString()
+        {
+            return this.Mostrar();
+        }
+
+        public override bool Equals(object obj)
+        {
+            return (obj.GetType() == typeof(Provincial));
+        }
+    }
 }

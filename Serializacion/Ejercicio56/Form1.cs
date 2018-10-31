@@ -26,58 +26,64 @@ namespace Ejercicio56
 
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StreamReader streamReader = null;
             string fileName;
             if (abrirArchivo.ShowDialog() == DialogResult.OK)
-            { 
+            {
                 fileName = abrirArchivo.FileName;
-                try
+                switch (Path.GetExtension(fileName))
                 {
-                    streamReader = new StreamReader(fileName);
-                    this.rtbTexto.Text = streamReader.ReadToEnd();
-                }
-                catch (Exception exc)
-                {
-                    MessageBox.Show(exc.Message);
-                }
-                finally
-                {
-                    if(!(streamReader is null))
-                        streamReader.Close();
+                    case ".txt":
+                        PuntoTxt archivoTxt = new PuntoTxt();
+                        this.rtbTexto.Text = archivoTxt.Leer(fileName);
+                        break;
+                    case ".dat":
+                        PuntoDat archivoDat = new PuntoDat();
+                        archivoDat = archivoDat.Leer(fileName);
+                        this.rtbTexto.Text = archivoDat.Contenido;
+                        break;
                 }
             }
         }
 
         private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StreamWriter streamWriter = null;
             string fileName;
             if (guardarArchivo.ShowDialog() == DialogResult.OK)
             {
-                fileName = guardarArchivo.FileName;
-                try
+                fileName = this.guardarArchivo.FileName;
+                switch(Path.GetExtension(fileName))
                 {
-                    streamWriter = new StreamWriter(fileName);
-                    streamWriter.Write(this.rtbTexto.Text);
-                }
-                catch(Exception exc)
-                {
-                    MessageBox.Show(exc.Message);
-                }
-                finally
-                {
-                    if (!(streamWriter is null))
-                        streamWriter.Close();
+                    case ".txt":
+                        PuntoTxt archivoTxt = new PuntoTxt();
+                        archivoTxt.Guardar(fileName, this.rtbTexto.Text);
+                        break;
+                    case ".dat":
+                        PuntoDat archivoDat = new PuntoDat();
+                        archivoDat.Contenido = this.rtbTexto.Text;
+                        archivoDat.Guardar(fileName, archivoDat);
+                        break;
                 }
             }
         }
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StreamWriter streamWriter = null;
+            string fileName;
             if(abrirArchivo.FileName != "")
             {
-                PuntoTxt puntoTxt = new PuntoTxt();
+                fileName = this.abrirArchivo.FileName;
+                switch (Path.GetExtension(fileName))
+                {
+                    case ".txt":
+                        PuntoTxt archivoTxt = new PuntoTxt();
+                        archivoTxt.Guardar(fileName, this.rtbTexto.Text);
+                        break;
+                    case ".dat":
+                        PuntoDat archivoDat = new PuntoDat();
+                        archivoDat.Contenido = this.rtbTexto.Text;
+                        archivoDat.Guardar(fileName, archivoDat);
+                        break;
+                }
             }
             else
             {

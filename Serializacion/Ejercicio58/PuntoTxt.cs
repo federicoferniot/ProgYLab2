@@ -28,12 +28,11 @@ namespace Ejercicio58
             StreamWriter streamWriter = null;
             try
             {
-                this.ValidarArchivo(ruta);
                 streamWriter = new StreamWriter(ruta);
                 streamWriter.Write(obj);
                 return true;
             }
-            catch(Exception e)
+            catch
             {
                 return false;
             }
@@ -44,14 +43,25 @@ namespace Ejercicio58
             }
         }
 
-        public bool Guardar(string ruta)
-        {
-            return true;
-        }
-
         public string Leer(string ruta)
         {
-            throw new NotImplementedException();
+            StreamReader streamReader = null;
+            string texto;
+            try
+            {
+                streamReader = new StreamReader(ruta);
+                texto = streamReader.ReadToEnd();
+            }
+            catch
+            {
+                texto = "";
+            }
+            finally
+            {
+                if (!(streamReader is null))
+                    streamReader.Close();
+            }
+            return texto;
         }
     }
 }

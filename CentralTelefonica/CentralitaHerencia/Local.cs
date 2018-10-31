@@ -10,7 +10,7 @@ namespace CentralitaHerencia
 	{
 		protected float costo;
 
-		public float CostoLlamada
+		public override float CostoLlamada
 		{
 			get { return this.CalcularCosto(); }
 		}
@@ -30,12 +30,22 @@ namespace CentralitaHerencia
 			return this.costo * this.duracion;
 		}
 
-		public string Mostrar()
+		protected override string Mostrar()
 		{
 			StringBuilder sb = new StringBuilder();
 			sb.AppendLine(base.Mostrar());
 			sb.AppendFormat("Costo llamada: {0}", this.CostoLlamada);
 			return sb.ToString();
 		}
-	}
+
+        public override string ToString()
+        {
+            return this.Mostrar();
+        }
+
+        public override bool Equals(object obj)
+        {
+            return (obj.GetType() == typeof(Local));
+        }
+    }
 }
